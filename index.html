@@ -4,28 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practica </title>
+    <title>Astronomía</title>
     <style>
         header{text-align: center;font-family:'Courier New', Courier, monospace;}
-        p{font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;color: rgb(25, 83, 117);}
+        p{font-family:'Times New Roman', Times, serif;color: rgb(0, 3, 8);font-size:larger;}
+        .imagen{max-width: 90%;}
+        .menu{flex-grow: 1;}
+        .contenedor{display: flex;align-items:center;}
+        body{background-color:rgb(80, 77, 77);}
+        a{text-decoration: none;}
     </style>
 </head>
-
 <body>
     <header>
         <h1>El mundo de la Astronomía</h1>
+        <h3>Descubre sus grandes maravillas</h3>
     </header>
     <br>
-
-  <nav>
-<ul>
-    <li><a href="html/texto.html"><p>Introducción a la Astronomía</p></a></li>
-    <li><a href="html/tablas.html"><p>Tabla de datos</p></a></li>
-    <li><a href="html/semánticas.html"><p>Articulos Cientificos</p></a></li>
-    <li><a href="html/agrupacion.html"><p>Galaxia Andromeda</p></a></li>
-    <li><a href="html/multimedia.html"><p>imagenes y videos sobre nuestra Galaxia Andromeda</p></a></li>
-    <li><a href="html/formularios.html"><p>Suscripción de pago</p></a></li>
-</ul>
-  </nav>  
+    <div class="contenedor">
+        <ul class="menu">
+            <li><a href="html/texto.html"><p>Introducción a la Astronomía</p></a></li>
+            <li><a href="html/tablas.html"><p>Tabla de datos</p></a></li>
+            <li><a href="html/semánticas.html"><p>Articulos Cientificos</p></a></li>
+            <li><a href="html/agrupacion.html"><p>La Vía Láctea</p></a></li>
+            <li><a href="html/multimedia.html"><p>imagenes y videos sobre nuestra Galaxia Andromeda</p></a></li>
+            <li><a href="html/formularios.html"><p>Suscripción de pago</p></a></li>
+        </ul>
+<picture>
+    <source media="(min-width:500px)" srcset="multimedia/img1.jpg">
+    <source media="(min-width:300px)" srcset="multimedia/img1.jpg">
+    <img src="multimedia/img1.jpg" alt="El mundo de la Astronomía" class="imagen">
+</picture>
+    </div> 
 </body>
 </html>
