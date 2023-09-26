@@ -5,39 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Astronomía</title>
-    <style>
-        header{text-align: center;font-family:'Courier New', Courier, monospace;}
-        p{font-family:'Times New Roman', Times, serif;color: #000308;font-size:larger;}
-        .imagen{max-width: 100%;margin-right: 450px;margin-top: 80px;}
-        /* flex grow:  */
-        .menu{flex-grow: 1;}
-        .contenedor{display: flex;align-items:center;}
-        body{background-color:#504d4d;}
-        a{text-decoration: none;}
-    </style>
+    <link rel="stylesheet" href="../clasemartes/CSS/style_login.css">
 </head>
 <body>
-    <header>
-        <h1>El mundo de la Astronomía</h1>
-        <h3>Descubre sus grandes maravillas</h3>
-    </header>
-    <br>
-    <div class="contenedor">
-        <ul class="menu">
-            <li><a href="html/texto.html"><p>Introducción a la Astronomía</p></a></li>
-            <li><a href="html/tablas.html"><p>Tabla de datos</p></a></li>
-            <li><a href="html/semánticas.html"><p>Articulos Cientificos</p></a></li>
-            <li><a href="html/agrupacion.html"><p>La Vía Láctea</p></a></li>
-            <li><a href="html/multimedia.html"><p>Elementos primordiales</p></a></li>
-            <li><a href="html/formularios.html"><p>Suscripción de pago</p></a></li>
-            <li><a href="html/estilos.html"><p>Estilos</p></a></li>
-            <li><a href="html/flexbox.html"><p>Flexbox</p></a></li>
-        </ul>
-<picture>
-    <source media="(min-width:500px)" srcset="multimedia/img1.jpg">
-    <source media="(min-width:300px)" srcset="multimedia/img1.jpg">
-    <img src="multimedia/img1.jpg" alt="El mundo de la Astronomía" class="imagen">
-</picture>
-    </div> 
+    <div class="background"></div>
+    <div class="centering">
+        <form action="" class="my_form">
+            <div class="login_welcome">
+            <img src="https://th.bing.com/th/id/OIP.wQ7GuMgOJP6to4Hjk3jBqQHaEU?pid=ImgDet&rs=1" alt="Astronauta" class="login">
+            <h1>Iniciar sesion</h1>
+            </div>
+            <div class="text_field">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder=" ingrese su email">
+                <img src="https://www.theemployerhandbook.com/files/2016/11/email.png" alt="icono email">
+            </div>
+            <div class="text_field">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="ingrese su password">
+                <img src="https://th.bing.com/th/id/R.eca1273d178e7fc4d21619bec4d81b3f?rik=5Ys7FXDDJiN0Aw&pid=ImgRaw&r=0" alt="icono contraseña">
+            </div>
+            <input type="submit" value="login" class="my_form_button">
+            <div class="my_form_actions">
+                <div class="my_form_row">
+                    <span>¿olvidate tu contraseña?</span>
+                    <a href="#" title="Recuperar contraseña">Recuperar contraseña</a>
+                </div>
+                <div class="my_form_signup">
+                    <span>Crear cuenta</span>
+                    <a href="#" title="Crear cuenta">Crear cuenta</a>
+                </div>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
